@@ -17,3 +17,5 @@
 
 **Haupttitel:** „Lindere deinen Schmerz, mach dein Leben leichter“
 **Untertitel:** „Speziell für Krebspatienten entwickelte Handschuhe zur Kälteanwendung“
+
+![](./assets/img/exca.png)
