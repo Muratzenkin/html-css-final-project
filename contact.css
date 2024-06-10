@@ -10,6 +10,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(226, 251, 251, 1) 82%,
+    rgba(206, 211, 212, 1) 100%
+  );
 }
 
 .navbar {
@@ -50,7 +56,9 @@ label {
   display: inline-block;
 }
 
-input[type="button"] {
+
+
+button {
   background-color: #04aa6d;
   color: white;
   padding: 16px;
@@ -58,10 +66,16 @@ input[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   float: right;
+  text-transform: uppercase;
+
+  i {
+    margin-left: 10px;
+  }
 }
 
-input[type="button"]:hover {
+button:hover {
   background-color: #45a049;
+
 }
 
 @media screen and (max-width: 600px) {
