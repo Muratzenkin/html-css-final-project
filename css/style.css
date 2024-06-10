@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(226, 251, 251, 1) 82%,
+    rgba(206, 211, 212, 1) 100%
+  );
+}
+
+.container {
+  margin-top: 10rem;
+}
+
+#startseite {
+  height: 80vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+
+  a:hover {
+    text-transform: uppercase;
+  }
+}
+
+.überschrift {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 100, 173, 1) 41%,
+    rgba(138, 138, 138, 1) 52%
+  );
+  background-clip: text;
+  display: inline;
+  color: transparent;
+}
+
+#fixed {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.whatsapp {
+  font-size: 4rem;
+  color: white;
+  background-color: limegreen;
+  border-radius: 50%;
+  position: fixed;
+  left: 5px;
+  bottom: 10px;
+
+  a {
+    color: white;
+  }
+}
+
+.whatsapp:hover {
+  animation: scale 2s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(2) translate(10px, -10px);
+  }
+}
+
+.up {
+  font-size: 3rem;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+
+  a {
+    color: gray;
+  }
+}
+
+.up:hover {
+  animation: go 2s infinite;
+}
+
+@keyframes go {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
