@@ -30,7 +30,7 @@ header {
   }
 }
 
-.überschrift {
+.headline {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -44,19 +44,30 @@ header {
   color: transparent;
 }
 
-.sticky-test {
+img:hover {
+  animation: focus 2s infinite;
+}
+
+@keyframes focus {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.2) translate(10px, -10px);
+  }
+}
+
+.shortcuts {
+  display: flex;
+  justify-content: space-between;
 }
 
 .whatsapp {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   background-color: limegreen;
   border-radius: 50%;
-  position: fixed;
-
-  left: 5px;
-  bottom: 10px;
-
   a {
     color: white;
   }
@@ -77,10 +88,7 @@ header {
 }
 
 .up {
-  font-size: 3rem;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  font-size: 2rem;
 
   a {
     color: gray;
@@ -101,13 +109,13 @@ header {
   }
 }
 
-.test {
+.maus {
   position: absolute;
   top: 85%;
   left: 50%;
 }
 
-.punkt {
+.dot {
   height: 20px;
   width: 20px;
   background-color: gray;
@@ -115,7 +123,7 @@ header {
   position: relative;
   top: 50%;
   left: 30%;
-  animation: oben 3s infinite;
+  animation: up-down 3s infinite;
 }
 
 .elips {
@@ -126,13 +134,14 @@ header {
   cursor: pointer;
 }
 
-.kare {
+.square {
   position: relative;
   top: 20%;
   border-top: 2px solid gray;
 }
 
-@keyframes oben {
+
+@keyframes up-down {
   0% {
     top: 20%;
   }
@@ -160,17 +169,39 @@ header {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 #überuns {
@@ -187,5 +218,20 @@ header {
   p:hover {
     text-decoration: underline;
     color: blue;
+  }
+}
+
+#test:hover {
+  animation: test 2s infinite;
+
+}
+
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
   }
 }
