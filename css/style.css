@@ -22,8 +22,8 @@ header {
     rgba(226, 251, 251, 1) 82%,
     rgba(206, 211, 212, 1) 100%
   );
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 100px;
 
   a:hover {
     text-transform: uppercase;
